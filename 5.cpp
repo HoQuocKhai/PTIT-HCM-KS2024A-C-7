@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	int n,max=0,min=0;
+	int n;
 	printf("nhap so phan tu trong mang: ");
 	scanf("%d",&n);
 	int array[n];
@@ -10,14 +10,11 @@ int main(){
 		scanf("%d",array + i);
 	}
 	for (int i=0;i<n;i++){
+		int min=array[i],max=array[i];
 		printf("%d ",array[i]);
 		if(max<array[i]){
 			max=array[i];
-			min=max;
-		}
-	}
-	for (int i=0;i<n;i++){
-		if(min>array[i]){
+		}else if(min>array[i]){
 			min=array[i];
 		}
 	}
