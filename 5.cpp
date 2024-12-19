@@ -9,8 +9,8 @@ int main(){
 		printf("nhap phan tu thu %d: ",i);
 		scanf("%d",array + i);
 	}
+	int min=array[0],max=array[0];
 	for (int i=0;i<n;i++){
-		int min=array[i],max=array[i];
 		printf("%d ",array[i]);
 		if(max<array[i]){
 			max=array[i];
